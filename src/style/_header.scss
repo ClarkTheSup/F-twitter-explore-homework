@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid $gray;
+  .logo {
+    @include heading(24px);
+  }
+
+  .login-button {
+    @include button($body-bg, 80px, $primary-color);
+  }
+
+  .register-button {
+    @include button($primary-color, 80px, $white);
+  }
+}

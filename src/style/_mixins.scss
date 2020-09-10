@@ -1,4 +1,22 @@
 @mixin heading($font-size) {
   margin-top: 0;
   font-size: $font-size;
+  font-weight: bold;
+  color: $heading-color;
+}
+
+@mixin button($bg-color, $button-width, $font-color) {
+  background-color: $bg-color;
+  width: $button-width;
+  color: $font-color;
+  border: 1px solid $primary-color;
+  height: 30px;
+  border-radius: 15px;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
