@@ -28,4 +28,15 @@
     background-color: $body-bg;
     color: $gray;
   }
+
+  .forget-password {
+    width: 90%;
+  }
+
+  .forget-password-link {
+    color: $primary-color;
+    &:link {
+      text-decoration: none;
+    }
+  }
 }
