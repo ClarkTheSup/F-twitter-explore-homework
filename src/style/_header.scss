@@ -7,11 +7,11 @@
     @include heading(24px);
   }
 
-  .login-button {
+  .header-login-button {
     @include button($body-bg, 80px, $primary-color);
   }
 
-  .register-button {
+  .header-register-button {
     @include button($primary-color, 80px, $white);
   }
 }

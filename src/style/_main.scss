@@ -39,4 +39,16 @@
       text-decoration: none;
     }
   }
+
+  .login-panel-login-button {
+    @include button($body-bg, 90%, $primary-color);
+  }
+
+  .login-panel-or {
+    color: white;
+  }
+
+  .login-panel-register-button {
+    @include button($primary-color, 90%, $white);
+  }
 }
