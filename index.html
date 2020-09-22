@@ -16,14 +16,14 @@
     </div>
   </header>
   <main class="main">
-<!--    todo feedback: 这里的div需要换成更有语义化的form标签-->
-    <div class="login-panel">
+    <form class="login-panel">
       <span class="login-heading">查看世界上正在发生的事情</span>
       <div class="login-panel-components">
-        <!--    todo feedback: input的placeholder里面的内容应该放入label标签-->
-        <input class="login-panel-input" type="text" placeholder="电话、邮件地址或用户名">
-        <input class="login-panel-input" type="password" placeholder="密码">
-<!--        TODO feedback: 应该给a标签使用display属性让它有block的行为，而不应该给它套一层div-->
+        <label for="username" class="login-panel-label">电话、邮件地址或用户名</label>
+        <input id="username" class="login-panel-input" type="text">
+        <label for="password" class="login-panel-label">密码</label>
+        <input id="password" class="login-panel-input" type="password">
+          <!--        TODO feedback: 应该给a标签使用display属性让它有block的行为，而不应该给它套一层div-->
         <div class="forget-password">
           <a class="forget-password-link" href="">忘记密码?</a>
         </div>
@@ -31,7 +31,7 @@
         <span class="login-panel-or">或</span>
         <button class="login-panel-register-button">注册</button>
       </div>
-    </div>
+    </form>
   </main>
   <script src="src/app.js"></script>
 </body>
